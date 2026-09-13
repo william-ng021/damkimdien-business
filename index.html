@@ -9,7 +9,24 @@
         body { font-family: Arial, Helvetica, sans-serif; color: #333; line-height: 1.6; background-color: #f5f5f5; }
         .navbar { position: sticky; top: 0; background-color: #1a4d2e; padding: 1rem 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1); z-index: 1000; }
         .navbar .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; }
-        .navbar .logo { color: #fff; font-size: 1.5rem; font-weight: bold; letter-spacing: 2px; }
+        .brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.brand .logo {
+    width: 75px;
+    height: auto;
+    display: block;
+}
+
+.brand-name {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
         .navbar .nav-menu { display: flex; list-style: none; gap: 2rem; }
         .navbar .nav-menu a { color: #fff; text-decoration: none; font-size: 1rem; transition: color 0.3s ease; }
         .navbar .nav-menu a:hover { color: #4ade80; }
@@ -46,21 +63,25 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="container">
-            <div class="logo">ĐẠM KIM ĐIỀN</div>
-            <ul class="nav-menu">
-                <li><a href="#home">Trang chủ</a></li>
-                <li><a href="#about">Về chúng tôi</a></li>
-                <li><a href="#process">Quy trình</a></li>
-                <li><a href="#contact">Liên hệ</a></li>
-            </ul>
+    <div class="container">
+        <div class="brand">
+            <img src="damkimdien.jpg" alt="Đạm Kim Điền" class="logo">
+            <div class="brand-name">ĐẠM KIM ĐIỀN</div>
         </div>
-    </nav>
+
+        <ul class="nav-menu">
+            <li><a href="#home">Trang chủ</a></li>
+            <li><a href="#about">Về chúng tôi</a></li>
+            <li><a href="#process">Quy trình</a></li>
+            <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+    </div>
+</nav>
     <section class="hero" id="home">
         <div class="container">
             <h1>Công ty Cổ phần Đạm Kim Điền</h1>
             <p class="slogan">Nhà sản xuất và cung ứng phân bón Ure, NPK chất lượng cao<br>Tiên phong ứng dụng tự động hóa - Đồng hành cùng nông nghiệp Việt Nam phát triển bền vững</p>
-            <a href="#" class="cta-button" onclick="downloadProfile(); return false;">Tải Hồ Sơ Năng Lực</a>
+            <a href="#" class="cta-button" onclick="downloadProfile(); return false;">Đăng ký nhận hồ sơ năng lực & Báo giá</a>
         </div>
     </section>
     <section class="services" id="about">
