@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Công ty Cổ phần Đạm Kim Điền - Nhà sản xuất phân bón hàng đầu</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, Helvetica, sans-serif; color: #333; line-height: 1.6; background-color: #f5f5f5; }
+        .navbar { position: sticky; top: 0; background-color: #1a4d2e; padding: 1rem 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1); z-index: 1000; }
+        .navbar .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; }
+        .navbar .logo { color: #fff; font-size: 1.5rem; font-weight: bold; letter-spacing: 2px; }
+        .navbar .nav-menu { display: flex; list-style: none; gap: 2rem; }
+        .navbar .nav-menu a { color: #fff; text-decoration: none; font-size: 1rem; transition: color 0.3s ease; }
+        .navbar .nav-menu a:hover { color: #4ade80; }
+        .hero { background: linear-gradient(135deg, #1a4d2e 0%, #2d5f3f 100%); color: #fff; padding: 120px 20px; text-align: center; position: relative; }
+        .hero .container { max-width: 1200px; margin: 0 auto; position: relative; z-index: 1; }
+        .hero h1 { font-size: 3.5rem; font-weight: bold; margin-bottom: 1rem; letter-spacing: 1px; }
+        .hero .slogan { font-size: 1.3rem; margin-bottom: 2.5rem; color: #e0e0e0; font-weight: 300; }
+        .hero .cta-button { display: inline-block; background-color: #4ade80; color: #1a4d2e; padding: 15px 40px; font-size: 1.1rem; font-weight: bold; text-decoration: none; border-radius: 5px; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(74,222,128,0.3); }
+        .hero .cta-button:hover { background-color: #22c55e; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(74,222,128,0.4); }
+        .services { padding: 80px 20px; background-color: #fff; }
+        .services .container { max-width: 1200px; margin: 0 auto; }
+        .services .section-title { text-align: center; font-size: 2.5rem; color: #1a4d2e; margin-bottom: 3rem; font-weight: bold; }
+        .services .cards-container { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+        .services .card { background-color: #f9f9f9; padding: 40px 30px; border-left: 4px solid #4ade80; transition: all 0.3s ease; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .services .card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); border-left-color: #1a4d2e; }
+        .services .card h3 { font-size: 1.5rem; color: #1a4d2e; margin-bottom: 1rem; font-weight: bold; }
+        .services .card p { color: #666; font-size: 1rem; line-height: 1.7; }
+        .footer { background-color: #1a1a1a; color: #ccc; padding: 50px 20px 30px; }
+        .footer .container { max-width: 1200px; margin: 0 auto; }
+        .footer .footer-content { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; margin-bottom: 30px; }
+        .footer .footer-section h4 { color: #4ade80; font-size: 1.2rem; margin-bottom: 1rem; font-weight: bold; }
+        .footer .footer-section p { margin-bottom: 0.5rem; font-size: 0.95rem; }
+        .footer .footer-section a { color: #ccc; text-decoration: none; transition: color 0.3s ease; }
+        .footer .footer-section a:hover { color: #4ade80; }
+        .footer .footer-bottom { border-top: 1px solid #333; padding-top: 20px; text-align: center; color: #888; font-size: 0.9rem; }
+        @media (max-width: 768px) {
+            .navbar .nav-menu { gap: 1rem; font-size: 0.9rem; }
+            .hero h1 { font-size: 2.2rem; }
+            .hero .slogan { font-size: 1.1rem; }
+            .services .cards-container { grid-template-columns: 1fr; gap: 30px; }
+            .footer .footer-content { grid-template-columns: 1fr; gap: 30px; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">ĐẠM KIM ĐIỀN</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Trang chủ</a></li>
+                <li><a href="#about">Về chúng tôi</a></li>
+                <li><a href="#process">Quy trình</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Công ty Cổ phần Đạm Kim Điền</h1>
+            <p class="slogan">Nhà sản xuất và cung ứng phân bón Ure, NPK chất lượng cao<br>Tiên phong ứng dụng tự động hóa - Đồng hành cùng nông nghiệp Việt Nam phát triển bền vững</p>
+            <a href="#" class="cta-button" onclick="downloadProfile(); return false;">Tải Hồ Sơ Năng Lực</a>
+        </div>
+    </section>
+    <section class="services" id="about">
+        <div class="container">
+            <h2 class="section-title">Năng Lực Cốt Lõi</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <h3>Sản Xuất Hiện Đại</h3>
+                    <p>Dây chuyền tự động hóa tiên tiến, chuyên sản xuất Ure hạt rời và NPK gốc (DAP/MAP) đạt tiêu chuẩn chất lượng quốc tế. Công suất thiết kế 500,000 tấn/năm.</p>
+                </div>
+                <div class="card">
+                    <h3>Chuỗi Cung Ứng Toàn Cầu</h3>
+                    <p>Mạng lưới cung cấp nguyên liệu chiến lược từ PVFCCo, PVCFC và nhập khẩu Kali trực tiếp từ các cường quốc phân bón. Đảm bảo chất lượng ổn định.</p>
+                </div>
+                <div class="card">
+                    <h3>Phát Triển Bền Vững</h3>
+                    <p>Cam kết tối ưu hóa năng suất cây trồng, mang lại giá trị kinh tế cao cho đối tác và bảo vệ môi trường sinh thái. Tuân thủ nghiêm ngặt ISO 14001.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Thông Tin Công Ty</h4>
+                    <p><strong>Công ty Cổ phần Đạm Kim Điền</strong></p>
+                    <p>Mã số thuế: 0123456789</p>
+                    <p>Giấy CNĐKDN: 0123456789 do Sở KH&ĐT cấp</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Địa Chỉ Nhà Máy</h4>
+                    <p>Khu công nghiệp Phú Mỹ III</p>
+                    <p>Xã Tân Phước, Thị xã Phú Mỹ</p>
+                    <p>Tỉnh Bà Rịa - Vũng Tàu, Việt Nam</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liên Hệ</h4>
+                    <p>Hotline: <a href="tel:1900xxxx">1900-xxxx</a></p>
+                    <p>Email: <a href="mailto:info@damkimdien.vn">info@damkimdien.vn</a></p>
+                    <p>Website: <a href="#">www.damkimdien.vn</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Công ty Cổ phần Đạm Kim Điền. Bản quyền thuộc về Đạm Kim Điền.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function downloadProfile() {
+            const messages = [
+                'Cảm ơn Quý đối tác đã quan tâm đến Đạm Kim Điền!',
+                'Vui lòng để lại thông tin liên hệ để nhận hồ sơ năng lực đầy đủ.',
+                'Đội ngũ tư vấn của chúng tôi sẽ liên hệ với Quý khách trong 24h.',
+            ];
+            const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+            alert(randomMessage);
+        }
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && href !== '#home') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
